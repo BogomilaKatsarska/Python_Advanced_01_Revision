@@ -1,5 +1,4 @@
 '''
-2:10
 Modules and Python Packages:
 - a module is a file consisting of Python code
 - they are stored in packages
@@ -39,3 +38,20 @@ import termcolor
 print(
     termcolor.colored('It works', 'red',)
 )
+
+
+def perform_operation(number1, number2, operation):
+    if operation == '+':
+        return number1 + number2
+    elif operation == '-':
+        return number1 - number2
+    elif operation == '/':
+        if number2 == 0:
+            raise ValueError('Cannot divide by zero.')
+        return number1 / number2
+    elif operation == '*':
+        return number1 * number2
+    elif operation == '^':
+        return number1 ^ number2
+    else:
+        raise ValueError('Operation must be one of the following: +, - , *, /, ^ .')
