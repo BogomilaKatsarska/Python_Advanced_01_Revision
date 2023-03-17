@@ -1,5 +1,5 @@
 '''
-0:59
+1:14
 1. __init__()
 - Creates objects with instances, customized to a specific initial state
 - Automatically invoked for the newly-created class instance
