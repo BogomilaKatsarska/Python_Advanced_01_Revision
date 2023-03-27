@@ -1,6 +1,4 @@
 '''
-
-16:00
 1.Instance method - has (self, ...)
 
 2.Static method:
