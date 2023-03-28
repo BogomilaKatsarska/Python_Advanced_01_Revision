@@ -1,7 +1,7 @@
 from math import pi
+from abc import ABC, abstractmethod
 
 '''
-2:10 
 1. POLYMORPHISM:
 - based on 'poly' (many) and 'morphism'(forms)
 - it is the ability to present the same interface for different underlying forms through the interface of their base class
@@ -11,7 +11,12 @@ from math import pi
 3. Duck Typing
 example: we can create a method that calls the sound meow, no matter of what the object which makes the sound is
 
-4. Abstraction
+4. Abstraction:
+- Abstract classes are classes that contain one or more abstract methods
+- An abstract method is a method that is declared, but contains no implementation
+- Abstract classes may not be instantiated, and require subclasses to provide implementations for the abstract methods
+- Abstract base classes(ABCs) enforce derived classes to implement particular methods from the base class
+- We implement using the abc module
 '''
 
 
@@ -59,3 +64,13 @@ for obj in Square(), Triangle():
     elif type(obj)__name__ == 'Triangle':
         area = obj.calculate_triangle_area()
     print(area)
+
+
+class Shape2(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
